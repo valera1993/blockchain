@@ -1,0 +1,269 @@
+/* RESET CSS */
+
+body {
+  font-size: 18px;
+  font-family: "Arial";
+  font-weight: 500;
+  line-height: 135%;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* header */
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 500;
+}
+
+.content {
+  padding-right: calc(15px + 15 * ((100vw - 320px) / 1920));
+  padding-left: calc(15px + 15 * ((100vw - 320px) / 1920));
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.header__logo img {
+  width: 130px;
+}
+
+.header__list-pc {
+  gap: calc(10px + 40 * ((100vw - 320px) / 1920));
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header__list-pc li:hover {
+  color: #3366a7;
+}
+/* SECTION INITIAL */
+
+.initial {
+  width: 100%;
+  min-height: 89vh;
+  position: relative;
+  margin-top: 85px;
+}
+
+.initial video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: black;
+}
+
+.initial__body {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 140px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 12px;
+  height: 100%;
+  padding-right: 12px;
+  line-height: 120%;
+  font-size: calc(18px + 14 * ((100vw - 320px) / 1920));
+}
+
+.initial__body h1 {
+  text-align: center;
+  margin-bottom: 36px;
+  line-height: 145%;
+}
+
+.initial__button-wr {
+  display: flex;
+  flex: 0 1 auto;
+  justify-content: center;
+}
+
+.initial__body button {
+  margin-bottom: calc(50px + 200 * ((100vw - 320px) / 1920));
+}
+
+.initial__body button {
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: calc(50px + 200 * ((100vw - 320px) / 1920));
+  width: fit-content;
+  transition: all 0.3s linear;
+  height: fit-content;
+}
+
+.initial__body button:hover {
+  transform: translateY(-8px);
+  border: 3px solid #3366a7;
+  color: #3366a7;
+}
+
+.initial__net {
+  display: flex;
+  align-items: center;
+  font-size: calc(18px + 14 * ((100vw - 320px) / 1920));
+}
+
+.initial__net section {
+  flex: 0 1 33.333%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  letter-spacing: 4px;
+}
+
+.d-flex{
+  display: flex;
+}
+
+/* SECTION TABLE */
+
+.table {
+  padding-bottom: calc(60px + 60 * ((100vw - 320px) / 1920));
+  padding-top: calc(60px + 60 * ((100vw - 320px) / 1920));
+  background-color: #242424;
+}
+
+.table h2 {
+  font-size: calc(18px + 14 * ((100vw - 320px) / 1920));
+  text-align: center;
+  margin-bottom: 36px;
+  line-height: 145%;
+  color: #fff;
+  letter-spacing: 4px;
+  padding-bottom: 40px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.table__net-wr {
+  width: 100%;
+  background-color: #0e0f11;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.table__net {
+  border-radius: 5px;
+  border: 3px solid #393d48;
+  background: linear-gradient(to bottom right, #0b111a, #282b32);
+  padding: 24px 32px 24px 64px;
+  color: #fff;
+}
+
+.table__net-item {
+  display: grid;
+  grid-template-columns: 2fr 4fr 4fr 4fr 4fr 4fr;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s linear;
+  text-align: center;
+  cursor: pointer;
+  user-select: none; 
+}
+
+.table__net-item:hover {
+  transition: all 0.3s linear;
+  background-color: rgba(0, 0, 0, 0.256);
+}
+
+.table__net-item .hover-none {
+  cursor: default;
+  background-color: inherit;
+}
+.search {
+  width: 32px;
+}
+
+.table__net-item div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+}
+
+.green {
+  color: green;
+}
+
+.table__net-item button {
+  background-color: #5151e7;
+  font-weight: 700;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  transition: all 0.3s linear;
+  border: none;
+}
+
+.table__net-item button:hover {
+  transition: all 0.3s linear;
+  background-color: #4343b3;
+}
